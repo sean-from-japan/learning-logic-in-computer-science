@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "logickit"
+version = "0.1.0"
+description = "Runnable demonstrations of a logic in computer science course: semantics, CNF, DPLL, resolution, unification and LTL model checking."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+authors = [{ name = "sean-from-japan" }]
+keywords = ["logic", "sat", "dpll", "resolution", "unification", "ltl", "model-checking"]
+classifiers = [
+  "Environment :: Console",
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering :: Mathematics",
+]
+dependencies = []
+
+[project.scripts]
+logickit = "logickit.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q --strict-markers"
+
+[tool.ruff]
+line-length = 100
+src = ["src", "tests"]
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "C4", "SIM", "RUF"]
+# E501: line length is the formatter's job.
+# RUF001: logical symbols are the subject matter, not ambiguous characters.
+ignore = ["E501", "RUF001"]
