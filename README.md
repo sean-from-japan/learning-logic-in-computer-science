@@ -1,5 +1,7 @@
 # learning-logic-in-computer-science
 
+**English** | [日本語概要](README.ja.md)
+
 What I learned in a second-year logic module, how I studied it, and a small
 library that makes the ideas runnable.
 
