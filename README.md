@@ -216,8 +216,9 @@ past papers, and no explanation copied or paraphrased from course material.
 Every note, example, formula, transition system and line of code in this
 repository was written for this repository.
 
-The module is a second-year Logic in Computer Science module, taken on exchange in spring 2026. Naming it is attribution; none of
-its material is reproduced.
+The source is a second-year Logic in Computer Science module, taken on exchange
+in spring 2026. The university and the module code are left out on purpose; ask
+me directly if you need them to verify this. None of its material is reproduced.
 
 ## Licence
 
